@@ -1,7 +1,7 @@
 :root {
 --title-color: #2E2F42;
 --text-color: #434455;
---white-color: #FFFFFF;
+--white-background-color: #FFFFFF;
 --button-background: #F4F4FD;
 --link-hover-color: #404bbf;
 
@@ -13,6 +13,13 @@ body {
     background-color: var(--white-color);
 
 }
+p, h1, h2, h3, h4, h5, h6 {
+margin: 0;
+}
+ul, ol, {
+margin: 0;
+padding: 0;
+}
 
 .list {
     list-style: none;
@@ -20,9 +27,14 @@ body {
 .link {
     text-decoration: none;
 }
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
 
 /*-----------------------------HEADER----------------------------*/
 .header {
+    padding-top: 25.5px;
     background-color: #FFFFFF;
 }
 
@@ -102,6 +114,8 @@ font-family: 'Raleway', sans-serif;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 48px;
+    padding-top: 188px;
 }
 
 .hero-btn {
@@ -114,6 +128,7 @@ font-family: 'Raleway', sans-serif;
         letter-spacing: 0.04em;
         color: #FFFFFF;
 background-color: #4D5AE5;
+padding-bottom: 188px;
 cursor: pointer;
 }
 .hero-btn:hover,
@@ -135,6 +150,7 @@ cursor: pointer;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--title-color);
+        margin-bottom: 8px;
  }
 
  .advantage-item-text {
@@ -155,6 +171,7 @@ cursor: pointer;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
+        margin-bottom: 72px;
  }
 
 .product-list {}
@@ -174,6 +191,7 @@ font-size: 36px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
+    margin-bottom: 72px;
  }
 
  .team-list {}
@@ -189,6 +207,7 @@ font-size: 36px;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--title-color);
+        margin-bottom: 8px;
  }
 
  .team-item-text {
