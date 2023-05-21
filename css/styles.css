@@ -16,7 +16,8 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
 margin: 0;
 }
-ul, ol, {
+
+ul, ol {
 margin: 0;
 padding: 0;
 }
@@ -29,7 +30,9 @@ padding: 0;
 }
 .container {
     max-width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
+    outline: 2px solid red;
 }
 .visually-hidden {
     position: absolute;
@@ -39,6 +42,11 @@ padding: 0;
     border: 0;
     padding: 0;
     white-space: nowrap;
+}
+.img-item{
+    display: block;
+    max-width: 100%; 
+    height: auto;
 }
 
 /*-----------------------------HEADER----------------------------*/
@@ -158,6 +166,7 @@ gap: 40px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    min-width: 496px;
 }
 
 .hero-btn {
@@ -188,7 +197,13 @@ cursor: pointer;
 
  .advantage {}
 
- .advantage-list {}
+ .advantage-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    gap: 24px;
+    max-width: 1128px;
+ }
 
  .advantage-item {}
 
@@ -206,11 +221,16 @@ cursor: pointer;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
+        max-width: 264px;
  }
 
  /*-------------------PRODUCT-----------------------*/
  
  .product {}
+ .product-container{
+    display: flex;
+    flex-direction: column;
+ }
 
  .product-title {
         font-size: 36px;
@@ -219,10 +239,18 @@ cursor: pointer;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
+        padding-top: 120px;
         margin-bottom: 72px;
  }
 
-.product-list {}
+.product-list {
+    display: flex;
+    flex-direction: row;
+    width: calc((1128-2*24)/3);
+    gap: 24px;
+    padding-bottom: 120px;
+   
+}
 
  .product-item {}
 
@@ -239,13 +267,24 @@ font-size: 36px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
+    padding-top: 120px;
     margin-bottom: 72px;
  }
 
- .team-list {}
+ .team-list {
+    display: flex;
+    flex-direction: row;
+    width: calc((1128-3*24)/4);
+    gap: 24px;
+    padding-bottom: 120px;
+ }
 
  .team-item {
     background-color: #FFFFFF;
+ }
+ .under-img-content{
+    padding-top: 32px;
+    padding-bottom: 32px;
  }
 
  .team-item-title {
