@@ -61,6 +61,7 @@ img {
 }
 
 /*-----------------------------HEADER----------------------------*/
+
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #E7E9FC;
@@ -106,15 +107,12 @@ font-family: 'Raleway', sans-serif;
     color: #2E2F42;
 }
 
-
 .menu {
     display: flex;
     
+    
 gap: 40px;
-padding-top: 24px 0;
-}
-.menu-item {
-
+padding: 24px 0;
 }
 
 .menu-link {
@@ -173,6 +171,9 @@ padding-top: 24px 0;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -192,6 +193,8 @@ background-color: #4D5AE5;
     gap: 10px;
 border-radius: 4px;
 cursor: pointer;
+margin-left: auto;
+margin-right: auto;
 }
 
 .hero-btn:hover,
@@ -204,66 +207,62 @@ cursor: pointer;
 .advantage {
     padding: 120px 0;
 }
- .advantage-list {
+.advantage-list {
     display: flex;
     flex-direction: row;
-    padding: 120px 0;
     gap: 24px;
     max-width: 1128px;
- }
+}
 
- .advantage-item-title {
+.advantage-item-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--title-color);
         margin-bottom: 8px;
- }
+}
 
- .advantage-item-text {
+.advantage-item-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
         max-width: 264px;
- }
+}
 
- /*-------------------PRODUCT-----------------------*/
- 
+/*-------------------PRODUCT-----------------------*/
+
 
 .product {
     padding-bottom: 120px;
 }
 
- .product-title {
+.product-title {
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
-        padding-top: 120px;
         margin-bottom: 72px;
- }
+}
 
 .product-list {
     display: flex;
     flex-direction: row;
     width: calc((1128-2*24)/3);
     gap: 24px;
-    
-   
 }
 
- /*-----------------OUR TEAM-----------------------*/
- 
- .our-team {
+/*-----------------OUR TEAM-----------------------*/
+
+.our-team {
     background-color: #F4F4FD;
     padding: 120px 0;
- }
+}
 
- .team {
+.team {
 font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -271,28 +270,27 @@ font-size: 36px;
     text-transform: capitalize;
     color: var(--title-color);
     margin-bottom: 72px;
- }
+}
 
- .team-list {
+.team-list {
     display: flex;
     flex-direction: row;
-    flex-basis: calc((1128-3*24)/4);
+
     gap: 24px;
-    padding-bottom: 120px;
 
- }
+}
 
- .team-item {
+.team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
- }
+}
 
- .under-img-content{
+.under-img-content{
     padding-top: 32px;
     padding-bottom: 32px;
- }
+}
 
- .team-item-title {
+.team-item-title {
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -300,30 +298,30 @@ font-size: 36px;
         letter-spacing: 0.02em;
         color: var(--title-color);
         margin-bottom: var(--card-h2-p-margin);
- }
+}
 
- .team-item-text {
+.team-item-text {
     font-size: 16px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--text-color);
         
- }
+}
 
- .card-content {
+.card-content {
     padding: var(--examples-text-content-padding);
 
- }
+}
 
- /*------------------FOOTER------------------------*/
+/*------------------FOOTER------------------------*/
 
- .footer {
+.footer {
     background-color: #2E2F42;
     padding: 100px 0;
- }
+}
 
- .logo-footer-part {
+.logo-footer-part {
     font-family: 'Raleway';
         font-style: normal;
         font-weight: 800;
@@ -333,9 +331,9 @@ font-size: 36px;
         text-transform: uppercase;
         color: #F4F4FD;
         
- }
+}
 
- .logo-link {
+.logo-link {
 
         font-family: 'Raleway', sans-serif;
             font-style: normal;
@@ -348,16 +346,15 @@ font-size: 36px;
                 display: inline-block;
                     margin-bottom: 16px;
             padding: 0px;
- }
+}
 
- .footer-text {
+.footer-text {
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;
         width: 264px;
-        padding-bottom: 100px;
- }
+}
 
 
 /*--------------------PortfolioPage------------------------------*/
